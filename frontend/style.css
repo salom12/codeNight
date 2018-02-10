@@ -1,0 +1,291 @@
+.row-item{
+    color: #ffffff;
+}
+
+.h-20{
+    height: 20%;
+}
+
+.my-navbutton{
+    border: none;
+    transition: all ease .2s;
+
+}
+
+.my-navbutton:hover{
+    transform: scale(1.1);
+    transform: rotate(-90deg);
+    transition: all ease .2s;
+}
+
+#nprogress .bar {
+    width: 100%;
+    height: 4px;
+  }
+  
+.mybtn:hover{
+ opacity: 0.8;   
+}
+
+footer{
+    position: fixed;
+    background-color: #ffffff;
+    border: 1px solid #1fa8ca;
+    border-radius: 0px;
+    bottom: 0;
+    right: 0;
+}
+
+.gettingStarted{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    border-radius: 15px;
+    border: none;
+    color: #ffffff;
+    height: 40px;
+    width: 180px;
+    font-size: 18px;
+    background-color: #1fa8ca;
+    transition: all ease .5s;
+    
+}
+.gettingStarted:hover{
+    background-color: #24bde4;
+    font-size: 21;
+    transform: scale(1.05);
+    transition: all ease .5s;
+
+}
+
+
+body{
+    background-color: #f8f9fa;
+}
+
+nav{
+    border-bottom: 1px solid #eaebec;
+}
+
+.sidebar{
+    position: fixed;
+    left: 0;
+    top:20px;
+    height: 100%;
+    width: 50px;
+    background-color: #eaebec;
+}
+
+.sidebar_items{
+    list-style: none;
+    position: absolute;
+    right: 16px;
+    top: 40px;
+}
+.sidebar_items > li {
+    margin-top: 20px;
+    width: 100%;
+}
+.sidebar_items > li > span{
+    cursor: pointer;
+}
+
+.sidebar_items > li > span:hover{
+    color: #47c6e6;
+}
+
+.active{
+    color: #369cb6;
+}
+
+.searchbox{
+    margin-left: 20px;
+    position: relative;
+    background-color: #fafafa;
+    border-radius: 0px;
+    border: 1px solid #47c6e6;
+    width: 400px;
+    height: 30px;
+}
+
+@media(max-width: 512px){
+    .searchbox{
+        width: 250px;
+    }
+}
+
+.searchbox:hover{
+    margin-left: 20px;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 0px;
+    border: 1px solid #0cc4f1;
+    height: 30px;
+}
+
+
+
+
+
+
+.searchbox > span{
+    position: absolute;
+    top: 6px;
+    left: 5px;
+
+}
+
+.searchbox > div {
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    height: 100%;
+
+}
+.searchbox > div > input{
+    background-color: inherit;
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.searchbox >  div > input:focus{
+    outline: none;
+}
+.codeCardContainer{
+    display: flex;
+    margin: 20px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+}
+.editor{
+    padding: 90px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.editor > textarea{
+    width: 100%;
+    height: 200px; 
+    background-color: #292929;
+    color: #ffffff;
+    margin: 10px;
+}
+
+@media(max-width: 512px){
+    .codeCardContainer{
+        justify-content: center;
+    }
+    .editor{
+        padding: 90px 20px;
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .editor > textarea{
+        width: 100%;
+        height: 200px; 
+        background-color: #292929;
+        color: #ffffff;
+        margin: 10px;
+    }
+    
+}
+
+.codeCard{
+    margin:0 20px 20px 20px;
+    /* background-color: #000000;   */
+    position: relative; 
+    border: 1px solid #c2c2c2;
+    cursor: pointer;
+    transition: transform ease .5s;
+
+}
+
+
+.codeCard:hover{
+    /* background-color: #0cc4f1;   */
+    border: 1px solid #0cc4f1;
+    transform: scale(1.03);
+    transition: transform ease .5s;
+}
+
+.codeCard > img{
+    
+    height: 180px;
+    max-width: 310px;
+    border-radius: inherit
+}
+
+.codeCard > div{
+    position: absolute;
+    color: #292929;
+    bottom: 0;
+    left: 0;
+    width: 222px;
+    height: 30px;
+    
+}
+.codeCard > div > span{
+    position: absolute;
+
+    background-color: #000000af;
+    color: #ffffff;
+    bottom: 0;
+}
+
+.tt{
+    background-color: #0c0c0cec;
+
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all ease .5s;
+    animation: work .2s both;
+    overflow: visible;
+}
+
+.tools{
+    color: #ffffff;
+    font-size: 22px;
+    padding-left: 10px;
+
+}
+
+@keyframes work{
+    0% {
+        width: 0%;
+        height: 0%;
+    }
+
+    100%{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+.tools > span{
+    cursor: pointer;
+}
+
+.tools  > span:hover{
+    color: #47c6e6;
+}
+
+.welcome{
+    margin-left: 72px;
+    font-size: 24px;
+}
+
+@media(max-width:512px){
+    .welcome{
+        margin-left: 20px;
+        font-size: 24px;
+    }
+}
